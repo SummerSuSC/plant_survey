@@ -167,9 +167,9 @@ function loadData(chartId) {
         xAxes: [{
           type: 'time',
           position: 'bottom',
+          min: new Date(date.year, 0, 1),
+          max: new Date(date.year, 11, 31),
           time: {
-            min: new Date(date.year, 0, 1),
-            max: new Date(date.year, 11, 31),
             unit: 'day',
             displayFormats: {
               day: 'YYYY/MM/DD',
